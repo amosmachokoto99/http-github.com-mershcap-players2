@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Players AI App</title>
+	</head>
+	<body>
+
+		<h1>Player overall score prediction web app</h1>
+		<p>Please input the following scores for the player. NB: if player is not goalkeeper, goalkeeping scores must be zero and vice vesa.</p>
+		<form action="/predict" method="POST">
+			<input type="text" name="gk1" placeholder="Movement reactions" required="required" /> 
+			<br>
+			<br>
+			<input type="text" name="gk2" placeholder="Mentality composure" required="required" />
+			<br>
+			<br> 
+			<input type="text" name="gk3" placeholder="Potential" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk4" placeholder="Value in euros" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk5" placeholder="Release clause in euros" required="required" /> 
+			<br>
+			<br>
+			<input type="text" name="gk6" placeholder="Power shot power" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk7" placeholder="Wage in euros" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk8" placeholder="Mentality vision" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk9" placeholder="Attacking short passing" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk10" placeholder="Skill long passing" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk11" placeholder="International reputation" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk12" placeholder="Age" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk13" placeholder="Skill ball control" required="required" />
+			<br>
+			<br>
+			<input type="text" name="gk14" placeholder="Power long shots" required="required" />
+			<br>
+			<br>
+			'movement_reactions', 'mentality_composure', 'potential', 'value_eur', 'release_clause_eur', 'power_shot_power', 'wage_eur', 'mentality_vision', 'attacking_short_passing', 'skill_long_passing', 'international_reputation', 'age', 'skill_ball_control', 'power_long_shots'
+			{{ output }} 
+			<br>
+			<br>
+			<br>
+			<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+		</form>
+ 		<br> 
+		<br>
+
+	</body>
+</html>
