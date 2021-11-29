@@ -33,8 +33,8 @@ def predict():
 	gk14=float(request.form.get("gk14",""))
 	features=[gk1,gk2,gk3,gk4,gk5,gk6,gk7,gk8,gk9,gk10,gk11,gk12,gk13,gk14]
 	values=[np.array(features)]
-	#model=Load()
-	#y_pred=model.predict(values)
+	model=Load()
+	y_pred=model.predict(values)
 	return render_template('index.html',output='The player`s predicted overal score is:{}'.format(y_pred))
 
 if __name__=='__main__':
