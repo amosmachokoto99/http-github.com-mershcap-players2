@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 import os
 
-#creating app name
+#creating app name fifa
 app=Flask(__name__)
 
 #function to load the model
